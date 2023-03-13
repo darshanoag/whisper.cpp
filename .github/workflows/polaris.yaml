@@ -1,0 +1,28 @@
+make base.en
+# Polaris on a GitHub-hosted ephemeral runner
+name: polaris
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  polaris:
+    runs-on: macos-latest
+
+    env:
+      POLARIS_SERVER_URL: "https://poc.polaris.synopsys.com/"
+      POLARIS_ACCESS_TOKEN: "rvb1uibn0h59d9e6tnba1548814n4stapr1k5ctrmtfet5igei8ckacvqrdeu0js5cerct042ntc6"
+      PROJECT: havnoor-whisper-ai
+      BLDCMD: make base.en
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Polaris Scan
+      run: |
+        PLATFORM=macosx
+        curl -fLOsS $POLARIS_SERVER_URL/api/tools/polaris_cli-$PLATFORM.zip
+        unzip -d $RUNNER_TEMP -jo polaris_cli-$PLATFORM.zip
+        $RUNNER_TEMP/polaris capture -- $BLDCMD
+        $RUNNER_TEMP/polaris --co project.name=$PROJECT --co capture.coverity.autoCapture="enable" analyze -w
