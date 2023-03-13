@@ -1,4 +1,3 @@
-make base.en
 # Polaris on a GitHub-hosted ephemeral runner
 name: polaris
 
