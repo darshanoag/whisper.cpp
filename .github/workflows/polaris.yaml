@@ -24,4 +24,4 @@ jobs:
         curl -fLOsS $POLARIS_SERVER_URL/api/tools/polaris_cli-$PLATFORM.zip
         unzip -d $RUNNER_TEMP -jo polaris_cli-$PLATFORM.zip
         $RUNNER_TEMP/polaris capture -- $BLDCMD
-        $RUNNER_TEMP/polaris --co project.name=$PROJECT --co capture.coverity.autoCapture="enable" analyze -w
+        $RUNNER_TEMP/polaris --co project.name=$PROJECT --co analyze -w
