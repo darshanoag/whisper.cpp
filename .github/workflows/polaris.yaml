@@ -21,7 +21,7 @@ jobs:
     - name: Polaris Scan
       run: |
         PLATFORM=macosx
-        curl -fLOsS $POLARIS_SERVER_URL/api/tools/polaris_cli-$PLATFORM.zip
+        curl -fLOsS $POLARIS_SERVER_URL/api/tools/synopsys-bridge-$PLATFORM.zip
         unzip -d $RUNNER_TEMP -jo synopsys-bridge-$PLATFORM.zip
         $RUNNER_TEMP/polaris capture -- $BLDCMD
         $RUNNER_TEMP/polaris --co project.name=$PROJECT --co analyze -w
