@@ -1,0 +1,20 @@
+capture:
+  compiler-configuration:
+    cov-configure:
+      - ["--comptype=ti:cl2000", "--compiler=cl2000", "--template"]
+build:
+  clean-command: make clean
+  build-command: make
+analyze:
+  checkers:
+    all: true
+    checker-config:
+      forward_null:
+        enabled: false
+      coding-standards:
+        cert-cpp:
+          pre-canned: L1-only
+commit:
+  connect:
+    stream: dt
+    url: "http://192.168.220.130:8080/"
