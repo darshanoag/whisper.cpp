@@ -24,7 +24,7 @@ jobs:
               uses: synopsys-sig/synopsys-action@v1.9.0
               with:
                     polaris_server_url: "https://poc.polaris.synopsys.com/"
-                    POLARIS_ACCESS_TOKEN: "rvb1uibn0h59d9e6tnba1548814n4stapr1k5ctrmtfet5igei8ckacvqrdeu0js5cerct042ntc6"
+                    POLARIS_ACCESS_TOKEN: "rvb1uibn0h59d9e6tnba154883488j3qpls4n3dksmvmeoqbphvme53c42lgra1c0a2fh9k0so7ds"
                     PROJECT: havnoor-whisper-ai
                     polaris_assessment_types: SAST
                     #coverity_url: "http://192.168.220.130:8080/"
