@@ -34,5 +34,5 @@ jobs:
                     coverity_repository_name: ${{ github.event.repository.name }}
                     coverity_branch_name: ${{ github.ref_name }}
                     coverity_version: '2023.12.0'
-                    coverity_local: true
+                    coverity_local: false
                     commit.connect.on-new-cert: trust
