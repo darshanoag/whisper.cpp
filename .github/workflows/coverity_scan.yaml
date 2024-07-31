@@ -25,8 +25,8 @@ jobs:
               with:
                     polaris_server_url: "https://poc.polaris.synopsys.com/"
                     POLARIS_ACCESS_TOKEN: "rvb1uibn0h59d9e6tnba15488012uid2t4p4p5tdahgplk1rspiaubnn1sjkf3s6df4q67c0clrls"
-                    polaris.application.name: "darshan_2024"
-                    polaris.project.name: "whisper"
+                    #polaris.application.name: "darshan_2024"
+                    #polaris.project.name: "whisper"
                     polaris_assessment_types: SAST
                     #coverity_url: "http://192.168.220.130:8080/"
                     #coverity_user: "admin"
