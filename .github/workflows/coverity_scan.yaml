@@ -22,7 +22,8 @@ jobs:
               if: ${{ github.event_name != 'pull_request' }}
             # Use the action defined in this repository
               uses: synopsys-sig/synopsys-action@v1.9.0
-              #with:
+              with:
+                    polaris_url: "poc.polaris.synopsys.com"
                     #coverity_url: "http://192.168.220.130:8080/"
                     #coverity_user: "admin"
                     #coverity_passphrase: "coverity"
