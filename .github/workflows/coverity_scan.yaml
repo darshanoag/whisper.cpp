@@ -23,7 +23,7 @@ jobs:
             # Use the action defined in this repository
               uses: synopsys-sig/synopsys-action@v1.9.0
               with:
-                    polaris_server_url: "poc.polaris.synopsys.com"
+                    polaris_server_url: "https://poc.polaris.synopsys.com/"
                     POLARIS_ACCESS_TOKEN: "rvb1uibn0h59d9e6tnba1548814n4stapr1k5ctrmtfet5igei8ckacvqrdeu0js5cerct042ntc6"
                     PROJECT: havnoor-whisper-ai
                     polaris_assessment_types: SAST
