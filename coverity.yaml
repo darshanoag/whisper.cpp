@@ -1,6 +1,10 @@
 analyze:
   location: local
 capture:
+  compiler-configuration:
+    cov-configure:
+      - ["--comptype=ti:cl2000", "--compiler=cl2000", "--template"]
+
   build:
     build-command: make
     clean-command: make clean
