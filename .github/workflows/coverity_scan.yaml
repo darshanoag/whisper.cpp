@@ -22,17 +22,17 @@ jobs:
               if: ${{ github.event_name != 'pull_request' }}
             # Use the action defined in this repository
               uses: synopsys-sig/synopsys-action@v1.9.0
-              with:
-                    coverity_url: "http://192.168.220.130:8080/"
-                    coverity_user: "admin"
-                    coverity_passphrase: "coverity"
-                    coverity_stream_name: dt
-                    coverity_project_name: darshan_test
+              #with:
+                    #coverity_url: "http://192.168.220.130:8080/"
+                    #coverity_user: "admin"
+                    #coverity_passphrase: "coverity"
+                    #coverity_stream_name: dt
+                    #coverity_project_name: darshan_test
                     # coverity_install_directory: C:\\Program Files\\Coverity\\Coverity Static Analysis
 
                     #project_directory: ${{ github.workspace }}/cps-panda-mcu/Source
-                    coverity_repository_name: ${{ github.event.repository.name }}
-                    coverity_branch_name: ${{ github.ref_name }}
-                    coverity_version: '2023.12.0'
-                    coverity_local: false
-                    commit.connect.on-new-cert: trust
+                    #coverity_repository_name: ${{ github.event.repository.name }}
+                    #coverity_branch_name: ${{ github.ref_name }}
+                    #coverity_version: '2023.12.0'
+                    #coverity_local: false
+                    #commit.connect.on-new-cert: trust
