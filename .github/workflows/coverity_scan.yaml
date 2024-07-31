@@ -24,6 +24,8 @@ jobs:
               uses: synopsys-sig/synopsys-action@v1.9.0
               with:
                     polaris_server_url: "poc.polaris.synopsys.com"
+                    POLARIS_ACCESS_TOKEN: "rvb1uibn0h59d9e6tnba1548814n4stapr1k5ctrmtfet5igei8ckacvqrdeu0js5cerct042ntc6"
+                    PROJECT: havnoor-whisper-ai
                     #coverity_url: "http://192.168.220.130:8080/"
                     #coverity_user: "admin"
                     #coverity_passphrase: "coverity"
